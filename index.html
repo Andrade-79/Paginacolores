@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Pagína de Colores</title>
+
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+
+    <body>
+
+        <header>
+            <h1 class="titulo" id="titulo"> ¡FIESTA DE COLORES! </h1>
+            <h1 class="subtitulo" id="subtitulo"> Aburrido... Se están yendo todos... </h1>
+        </header>
+
+        <div class="tarjetaVotos">
+             <div class="conteotitulo">
+                <h1>Botón más popular:       
+                    <h2 id="botonMasClickeado"></h2>
+                    <h2 id="cantidadClicksMasClickeado"></h2>
+            </div>
+            <div class="cuenta regresiva">
+                <h2>La gente se ira en:</h2>
+                <h2 id="contador"></h2> 
+                <div id="mensajeReinicio" style="display: none;">¡Reiniciando!</div>
+            </div>
+        </div>
+        <div class="pista">
+            <div class="fila" onclick="reiniciarCuenta()">
+                <div class="cuadrado amarillo" onclick="SonidoAmarillo(); contarClick('amarillo'); cambiarColor('amarillo'); resetInactivityTimer();"></div>
+                <div class="cuadrado verde" onclick="SonidoVerde(); contarClick('verde'); cambiarColor('verde'); resetInactivityTimer();"></div>
+                <div class="cuadrado rojo" onclick="SonidoRojo(); contarClick('rojo'); cambiarColor('rojo'); resetInactivityTimer();"></div>
+                <div class="cuadrado blanco" onclick="SonidoBlanco(); contarClick('blanco'); cambiarColor('blanco'); resetInactivityTimer();"></div>
+                <div class="cuadrado verde" onclick="SonidoVerde(); contarClick('verde'); cambiarColor('verde'); resetInactivityTimer();"></div>
+            </div>
+
+            <div class="fila" onclick="reiniciarCuenta()">
+                <div class="cuadrado rojo" onclick="SonidoRojo(); contarClick('rojo'); cambiarColor('rojo'); resetInactivityTimer();"></div>
+                <div class="cuadrado azul" onclick="SonidoAzul(); contarClick('azul'); cambiarColor('azul'); resetInactivityTimer();"></div>
+                <div class="cuadrado blanco" onclick="SonidoBlanco(); contarClick('blanco'); cambiarColor('blanco'); resetInactivityTimer();"></div>
+                <div class="cuadrado amarillo" onclick="SonidoAmarillo(); contarClick('amarillo'); cambiarColor('amarillo'); resetInactivityTimer();"></div>
+                <div class="cuadrado rosa" onclick="SonidoRosa(); contarClick('rosa'); cambiarColor('rosa'); resetInactivityTimer();"></div>
+            </div>
+
+            <div class="fila" onclick="reiniciarCuenta()">
+                <div class="cuadrado blanco" onclick="SonidoBlanco(); contarClick('blanco'); cambiarColor('blanco'); resetInactivityTimer();"></div>
+                <div class="cuadrado naranja" onclick="SonidoNaranja(); contarClick('naranja'); cambiarColor('naranja'); resetInactivityTimer();"></div>
+                <div class="cuadrado rosa" onclick="SonidoRosa(); contarClick('rosa'); cambiarColor('rosa'); resetInactivityTimer();"></div>
+                <div class="cuadrado naranja" onclick="SonidoNaranja(); contarClick('naranja'); cambiarColor('naranja'); resetInactivityTimer();"></div>
+                <div class="cuadrado azul" onclick="SonidoAzul(); contarClick('azul'); cambiarColor('azul'); resetInactivityTimer();"></div>
+            </div>
+
+            <div class="fila" onclick="reiniciarCuenta()">
+                <div class="cuadrado rosa" onclick="SonidoRosa(); contarClick('rosa'); cambiarColor('rosa'); resetInactivityTimer();"></div>
+                <div class="cuadrado verde"onclick="SonidoVerde(); contarClick('verde'); cambiarColor('verde'); resetInactivityTimer();"></div>
+                <div class="cuadrado amarillo" onclick="SonidoAmarillo(); contarClick('amarillo'); cambiarColor('amarillo'); resetInactivityTimer();"></div>
+                <div class="cuadrado verde" onclick="SonidoVerde(); contarClick('verde'); cambiarColor('verde'); resetInactivityTimer();"></div>
+                <div class="cuadrado rojo" onclick="SonidoRojo(); contarClick('rojo'); cambiarColor('rojo'); resetInactivityTimer();"></div>
+            </div>
+            <div class="fila" onclick="reiniciarCuenta()">
+                <div class="cuadrado naranja" onclick="SonidoNaranja(); contarClick('naranja'); cambiarColor('naranja'); resetInactivityTimer();"></div>
+                <div class="cuadrado blanco" onclick="SonidoBlanco(); contarClick('blanco'); cambiarColor('blanco'); resetInactivityTimer();"></div>
+                <div class="cuadrado verde" onclick="SonidoVerde(); contarClick('verde'); cambiarColor('verde'); resetInactivityTimer();"></div>
+                <div class="cuadrado rosa" onclick="SonidoRosa(); contarClick('rosa'); cambiarColor('rosa'); resetInactivityTimer();"></div>
+                <div class="cuadrado naranja" onclick="SonidoNaranja(); contarClick('naranja'); cambiarColor('naranja'); resetInactivityTimer();"></div>
+            </div>
+
+            <div class="fila" onclick="reiniciarCuenta()">
+                <div class="cuadrado azul " onclick="SonidoAzul(); contarClick('azul'); cambiarColor('azul'); resetInactivityTimer();"></div>
+                <div class="cuadrado verde" onclick="SonidoVerde(); contarClick('verde'); cambiarColor('verde'); resetInactivityTimer();"></div>
+                <div class="cuadrado naranja" onclick="SonidoNaranja(); contarClick('naranja'); ('naranja'); resetInactivityTimer();"></div>
+                <div class="cuadrado azul" onclick="SonidoAzul(); contarClick('azul'); cambiarColor('azul'); resetInactivityTimer();"></div>
+                <div class="cuadrado rojo" onclick="SonidoRojo(); contarClick('rojo'); cambiarColor('rojo'); resetInactivityTimer();"></div>
+            </div>
+
+        </div>
+
+        <div class="botonreinicio"> 
+            <button class="reinicio" onclick="detenerFiesta()" id="botonreinicio">Reiniciar Fiesta</button>
+        </div>
+
+
+
+
+        <audio id="amarillo" src="Assets/EfectosdeSonido/Bateria1.wav"></audio>
+        <audio id="azul" src="Assets/EfectosdeSonido/Bajo1.wav"></audio>
+        <audio id="verde" src="Assets/EfectosdeSonido/Guitarra1.wav"></audio>
+        <audio id="rojo" src="Assets/EfectosdeSonido/Guitarra2.wav"></audio>
+        <audio id="blanco" src="Assets/EfectosdeSonido/Bajo2.wav"></audio>
+        <audio id="rosa" src="Assets/EfectosdeSonido/Bateria2.wav"></audio>
+        <audio id="naranja" src="Assets/EfectosdeSonido/Base1.wav"></audio>
+
+        <script src="script.js"></script>
+
+
+        
+
+    </body>
+</html>

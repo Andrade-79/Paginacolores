@@ -1,0 +1,159 @@
+body {
+    background-color: #484848;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+font-family: 'Courier New', Courier, monospace;
+color: hsl(0, 0%, 100%);
+font-style: italic;
+text-shadow: 4px 4px 0px black, -4px -4px 0px black, 4px -4px 0px black, -4px 4px 0px black; 
+text-align: center;
+padding: 3px 20px;
+border-radius: 20px;
+background-color: rgb(99, 99, 99);
+margin: 0px 320px 10px;
+box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos. */
+.titulo {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: -10px;
+}
+
+.subtitulo {
+    font-size: 30px;
+}
+
+/* Písta de baile. */
+.pista {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 20px 20px;
+   border-radius: 20px;
+   background-color: rgb(99, 99, 99);
+   margin: 0px 320px 10px;
+   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.filas {
+    display: flex;
+    align-items: center;
+}
+
+/* Cuadrados de la pista. */
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 5px #000000 solid;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: all 0.5s ease; /* Transición suave */
+  }
+
+
+.amarillo {
+    background-color: #e9de4e;
+
+    ;
+}
+.amarillo:hover {
+    transform: scale(1.1);
+}
+
+.rojo { background-color: #fb383e;
+}
+.rojo:hover {
+    transform: scale(1.1);
+}
+
+.blanco { background-color: #ebebeb;}
+.blanco:hover {
+    transform: scale(1.1);
+}
+.rosa { background-color: #f06def;}
+.rosa:hover {
+    transform: scale(1.1);
+}
+.naranja { background-color: #ee9057; }
+.naranja:hover {
+    transform: scale(1.1);
+}
+.azul { background-color: #4adae7; }
+.azul:hover {
+    transform: scale(1.1);
+}
+.verde { background-color: #47d04c; }
+.verde:hover {
+    transform: scale(1.1);
+}
+
+/* Botón de Reinicio */
+
+.botonreinicio {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+   
+    
+}
+
+.reinicio {
+    padding: 30px 190px;
+    transition: 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    background-color: rgb(99, 99, 99);
+    color: #ffffff;
+    font-style: italic;
+    font-size: 34px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black; 
+    outline: none;
+}
+
+.reinicio:hover {
+    transform: scale(1.02);
+}
+
+.tarjetaVotos {
+    border-radius: 20px;
+    background-color: rgb(99, 99, 99);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    float: left;
+    margin-right: 5px;
+    padding: 20px 25px;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black;
+    overflow: hidden;
+    height: 575px;
+    width: 260px;
+}
+
+
+.conteotitulo {
+    font-size: 12px;
+}
+
+.contador {
+    font-size: 12px
+}
+
+
+
+
+
+
